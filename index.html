@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5c98a" />
+  <meta name="description" content="A little memory book made with love." />
+  <title>For You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sun-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Opening envelope -->
+  <div class="opening-overlay" id="openingOverlay" aria-modal="true" role="dialog">
+    <div class="opening-sparkles" aria-hidden="true"></div>
+    <div class="opening-content">
+      <p class="opening-kicker">a little something for you</p>
+      <h2 class="opening-title">For you, with love ♡</h2>
+      <p class="opening-subtitle">There is a little letter waiting inside.</p>
+
+      <button class="envelope-wrap" id="envelopeButton" type="button" aria-label="Open the envelope">
+        <span class="floating-heart heart-one" aria-hidden="true">♡</span>
+        <span class="floating-heart heart-two" aria-hidden="true">♡</span>
+
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-shadow"></span>
+          <span class="envelope-paper">
+            <span>For the girl who still has a place in my heart.</span>
+            <b>♡</b>
+          </span>
+          <span class="envelope-body"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal">♡</span>
+        </span>
+
+        <span class="envelope-hint">tap the envelope to open</span>
+      </button>
+
+      <p class="opening-note">No pressure. Just something from my heart.</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">a little something for you</p>
+        <h1>For <span>You</span></h1>
+        <p class="hero-copy">
+          Some people leave memories behind.<br>
+          Some people become part of them.
+        </p>
+        <button class="primary-btn" id="enterBtn" type="button">
+          Open this when you're ready <span>♡</span>
+        </button>
+      </div>
+      <div class="scroll-hint">scroll slowly <span>↓</span></div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro reveal">
+      <p class="section-kicker">Before anything else</p>
+      <h2>I don't want to rewrite the past.</h2>
+      <p class="body-copy">
+        I made this because there are things I never said properly.
+        Not to put pressure on you. Not to make you choose anything today.
+        Just to let you see the part of my heart that words in a chat never quite explained.
+      </p>
+    </section>
+
+    <!-- Memories -->
+    <section class="memory-section reveal">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Chapter I</p>
+          <h2>Do you remember?</h2>
+        </div>
+        <span class="chapter-number">01</span>
+      </div>
+
+      <div class="memory-grid">
+        <article class="memory-card tall">
+          <div class="photo-frame">
+            <img src="photos/photo-1.jpg" alt="Memory 1" loading="lazy" onerror="this.onerror=null; this.src='photos/photo-1.svg';">
+          </div>
+          <div class="card-copy">
+            <span>01 · the beginning</span>
+            <h3>“I still remember the feeling.”</h3>
+            <p>I still remember the moment I realized you were becoming someone really important to me. I didn't know it then, but somehow, little by little, you became a part of my everyday life.</p>
+          </div>
+        </article>
+
+        <article class="memory-card tall">
+          <div class="photo-frame">
+            <img src="photos/photo-2.jpg" alt="Memory 2" loading="lazy" onerror="this.style.display='none';">
+          </div>
+          <div class="card-copy">
+            <span>02 · the little things</span>
+            <h3>“It was never just the big moments.”</h3>
+            <p>It wasn't always the big moments that I loved most. Sometimes it was your random messages, the silly jokes only we understood, the way we looked at each other, and all those ordinary little moments that somehow became my favorites.</p>
+          </div>
+        </article>
+
+        <article class="memory-card tall">
+          <div class="photo-frame">
+            <img src="photos/photo-3.jpg" alt="Memory 3" loading="lazy" onerror="this.style.display='none';">
+          </div>
+          <div class="card-copy">
+            <span>03 · us</span>
+            <h3>“Some memories still feel warm.”</h3>
+            <p>I still remember that day so clearly. It might have seemed like just another ordinary moment to you, but to me, it became one of those memories I quietly kept because I was happy simply being there with you.</p>
+          </div>
+        </article>
+
+        <article class="memory-card wide featured-memory">
+          <div class="photo-frame">
+            <img src="photos/photo-4.jpg" alt="Memory 4" loading="lazy" onerror="this.onerror=null; this.src='photos/photo-4.svg';">
+          </div>
+          <div class="card-copy">
+            <span>04 · one more</span>
+            <h3>“If I could keep one moment…”</h3>
+            <p>There's one moment I'd happily experience one more time—not because I want to pretend nothing ever went wrong, but because I'd want to be there again knowing everything I know now, appreciating you more, listening better, and realizing just how much that moment meant to me.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section reveal">
+      <div class="quote-mark">“</div>
+      <blockquote>
+        I don't miss some perfect version of us.<br>
+        I miss <em>you</em> — exactly as you were.
+      </blockquote>
+      <div class="quote-line"></div>
+    </section>
+
+    <!-- Letter -->
+    <section class="letter-section reveal">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Chapter II</p>
+          <h2>Things I never said properly.</h2>
+        </div>
+        <span class="chapter-number">02</span>
+      </div>
+
+      <div class="letter-card">
+        <div class="letter-date">written with a little courage</div>
+        <div class="letter-body">
+          <p>Hey, you.</p>
+          <p>
+            I spent a lot of time thinking about us — not just the ending,
+            but the reason I cared so much in the first place.
+          </p>
+          <p>
+            I miss your laugh. I miss the way an ordinary day could suddenly feel special
+            because I got to share it with you. I miss the version of me that existed when
+            things felt easy between us.
+          </p>
+          <p>
+            I know missing someone isn't the same thing as being ready to do everything right.
+            So I'm not asking you to forget what happened. I'm asking you to remember that I
+            did care, that I still care, and that I learned things from losing you.
+          </p>
+          <p class="handwritten">Maybe there can be a new chapter.</p>
+          <p>Not the old us. A better one. Slower. Kinder. More honest.</p>
+          <p>And if you don't want that, I'll respect it. I just didn't want the last thing between us to be silence.</p>
+          <p>— me ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I'd do differently -->
+    <section class="change-section reveal">
+      <p class="section-kicker">Chapter III</p>
+      <h2>What I'd do differently.</h2>
+      <p class="body-copy narrow">Because saying “I miss you” means very little without saying what I learned.</p>
+
+      <div class="change-grid">
+        <div class="change-item"><span>01</span><h3>Listen better.</h3><p>Not just hear your words — actually understand them.</p></div>
+        <div class="change-item"><span>02</span><h3>Communicate sooner.</h3><p>No more letting small problems grow into big ones.</p></div>
+        <div class="change-item"><span>03</span><h3>Appreciate the ordinary.</h3><p>Some of the best memories were the days nothing special happened.</p></div>
+        <div class="change-item"><span>04</span><h3>Choose honesty.</h3><p>Say what I feel instead of waiting until it's too late.</p></div>
+      </div>
+    </section>
+
+    <!-- Final -->
+    <section class="final-section reveal" id="final">
+      <div class="sunset-orb" aria-hidden="true"></div>
+      <p class="section-kicker">The last page</p>
+      <h2>Maybe we don't need to go back.</h2>
+      <p class="final-copy">
+        Maybe we just need one honest conversation.<br>
+        And maybe that's enough for now.
+      </p>
+
+      <!-- Telegram link: opens the chat and pre-fills the message. -->
+      <a
+        class="talk-btn"
+        id="talkBtn"
+        href="https://t.me/Lulaykong?text=I%20accept%20your%20request%20%F0%9F%98%8A%20%E2%9D%A4%EF%B8%8F"
+        target="_blank"
+        rel="noopener"
+      >
+        Can we talk? <span>♡</span>
+      </a>
+
+      <p class="small-disclaimer">No pressure. Just one door left open.</p>
+    </section>
+
+    <footer>
+      <p>made from memories, not perfection.</p>
+      <span>♡</span>
+    </footer>
+  </main>
+
+  <!-- Local background music: put music.mp3 next to index.html -->
+  <div class="music-dock" id="musicDock" aria-live="polite">
+    <button id="musicOpen" class="music-open" type="button" aria-label="Play or pause music" title="Play music">♫</button>
+    <audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
+  </div>
+
+  <div class="toast" id="toast">I hope this made you smile. ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>

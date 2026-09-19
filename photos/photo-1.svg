@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6dfbd"/>
+      <stop offset="0.55" stop-color="#eab58c"/>
+      <stop offset="1" stop-color="#c98069"/>
+    </linearGradient>
+    <radialGradient id="s" cx="50%" cy="30%" r="55%">
+      <stop offset="0" stop-color="#fff6df" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <circle cx="600" cy="250" r="330" fill="url(#s)"/>
+  <path d="M0 700 C 230 575, 340 820, 560 680 S 890 540, 1200 720 V900 H0 Z" fill="#9a6256" opacity=".42"/>
+  <text x="600" y="470" text-anchor="middle" fill="#fffdf7" font-family="Georgia, serif" font-size="78">your photo here</text>
+  <text x="600" y="545" text-anchor="middle" fill="#fffdf7" font-family="Arial, sans-serif" font-size="24" letter-spacing="5">MEMORY 1</text>
+</svg>
